@@ -1,0 +1,58 @@
+form input,
+form button {
+  padding: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  background: white;
+  outline: none;
+}
+
+form button {
+  cursor: pointer;
+  color: #d88771;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #d88771;
+  color: white;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  cursor: pointer;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  color: #ff6f47;
+  background: white;
+}
